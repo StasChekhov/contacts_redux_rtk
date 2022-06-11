@@ -1,0 +1,99 @@
+.section{
+  text-align: center;
+}
+
+
+/* Phonebook section  */
+.form {
+  background-color: #078282FF;
+  width: 350px;
+  height: 200px;
+  border: 1px solid black;
+  border-radius: 5%;
+  margin: auto;
+  padding: 10px;
+}
+.div {
+ 
+  display: flex;
+  flex-direction: column;
+}
+.label {
+  margin: 10px 10px;
+  text-align: left;
+}
+.input {
+  width: 300px;
+  height: 20px;
+  margin: auto;
+  padding: 5px 10px;
+  border-radius: 50px;
+  box-shadow: inset 6px 6px 6px #cbced1, inset -6px -6px 6px white;
+}
+.button {
+  height: 25px;
+  background-color: azure;
+  margin: 15px 50px;
+
+  color: rgb(14, 4, 4);
+    
+    background: white;
+    height: 30px;
+    border-radius: 20px;
+    cursor: pointer;
+    font-weight: 900;
+    box-shadow: inset 6px 6px 6px #cbced1, inset -6px -6px 6px white;
+    transition: 0.5s;
+}
+.button:hover {
+  box-shadow: inset 6px 6px 6px #339E66FF, inset -6px -6px 6px #339E66FF;
+  background: #339E66FF;
+  color: white;
+}
+
+
+.contact {
+  
+  color: white;
+  width: 600px;
+  margin: 10px auto ;
+  padding: 5px;
+  border-radius: 50px;
+    box-shadow: inset 6px 6px 6px #078282FF, inset -6px -6px 6px #078282FF;
+    background-color: #078282FF;
+    
+}
+
+
+/* ContactItems section */
+.contactBlock {
+  
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  
+}
+.contactName {
+  font-weight: 700;
+}
+.contactPhone {
+  font-style: italic;
+}
+
+.delete {
+ position: absolute;
+ height: 30px;
+ top: 4px;
+ left: 540px;
+  background-color: azure;
+  color: rgb(14, 4, 4);
+    border-radius: 20px;
+    cursor: pointer;
+    box-shadow: inset 6px 6px 6px #cbced1, inset -6px -6px 6px white;
+    transition: 0.5s;
+}
+.delete:hover {
+  box-shadow: inset 6px 6px 6px rgb(197, 75, 75), inset -6px -6px 6px rgb(197, 75, 75);
+  background: rgb(197, 75, 75);
+  color: white;
+}
