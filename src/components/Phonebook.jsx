@@ -2,17 +2,17 @@ import React, { useState } from "react";
 // import PropTypes from "prop-types";
 import s from "./Phonebook.module.css";
 import { nanoid } from "@reduxjs/toolkit";
-import { useDispatch } from "react-redux";
+// import { useDispatch } from "react-redux";
 import { useAddContactMutation, useGetContactsQuery } from "redux/contactsApi";
 
 export default function Phonebook() {
- const dispatch = useDispatch();
+ //  const dispatch = useDispatch();
 
  const [name, setName] = useState("");
  const [number, setNumber] = useState("");
 
- const { data = [], error, isLoading, refetch } = useGetContactsQuery();
- const [addContact, result] = useAddContactMutation();
+ const { data = [], error, isLoading } = useGetContactsQuery();
+ const [addContact] = useAddContactMutation();
 
  const onSaveContact = async () => {
   const contact = {

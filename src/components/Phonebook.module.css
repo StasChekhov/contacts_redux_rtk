@@ -97,3 +97,12 @@
   background: rgb(197, 75, 75);
   color: white;
 }
+
+/* Filter Section  */
+
+.filterInput{
+  padding: 5px 10px;
+  border-radius: 50px;
+  box-shadow: inset 6px 6px 6px #cbced1, inset -6px -6px 6px white;
+
+}

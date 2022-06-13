@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { useDispatch } from "react-redux";
 import { filterContacts } from "redux/clickSlice";
+import s from "./Phonebook.module.css";
 
 const Filter = () => {
  const [text, setText] = useState("");
@@ -15,8 +16,13 @@ const Filter = () => {
 
  return (
   <label>
-   Filter
-   <input type="text" value={text} onChange={handleChange} />
+   Filter:
+   <input
+    type="text"
+    value={text}
+    className={s.filterInput}
+    onChange={handleChange}
+   />
   </label>
  );
 };

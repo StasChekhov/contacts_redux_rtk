@@ -7,14 +7,14 @@ import { useGetContactsQuery } from "redux/contactsApi";
 // import { getContacts } from "redux/clickSlice";
 
 export default function App() {
- const { data, error, isLoading } = useGetContactsQuery();
+ const { data = [], error, isLoading } = useGetContactsQuery();
  return (
   <div className={s.section}>
    <Section title="Phonebook">
     <Phonebook />
    </Section>
    <Section title="Contacts">
-    {/* {data.length < 1 ? <p>Your contacts list is empty</p> : <Filter />} */}
+    {data.length < 1 ? <p>Your contacts list is empty</p> : <Filter />}
     <ContactList />
    </Section>
   </div>
